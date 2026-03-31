@@ -6,6 +6,12 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 export default function ScrollEffects() {
   useEffect(() => {
+    const prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const finePointer = window.matchMedia("(pointer: fine)").matches;
+    const largeScreen = window.matchMedia("(min-width: 1024px)").matches;
+    const saveData = (navigator as Navigator & { connection?: { saveData?: boolean } }).connection?.saveData;
+    if (prefersReduced || !finePointer || !largeScreen || saveData) return;
+
     gsap.registerPlugin(ScrollTrigger);
 
     const lenis = new Lenis({
