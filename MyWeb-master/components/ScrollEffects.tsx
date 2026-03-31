@@ -11,7 +11,6 @@ export default function ScrollEffects() {
     const lenis = new Lenis({
       lerp: 0.1,
       smoothWheel: true,
-      smoothTouch: false,
     });
 
     let rafId = 0;
