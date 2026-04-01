@@ -1,0 +1,14 @@
+{
+  "name": "myweb-root",
+  "private": true,
+  "scripts": {
+    "build": "npm --prefix MyWeb-master run build",
+    "dev": "npm --prefix MyWeb-master run dev",
+    "start": "npm --prefix MyWeb-master run start"
+  },
+  "dependencies": {
+    "next": "14.2.5",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  }
+}
