@@ -2,6 +2,7 @@
   "name": "myweb-root",
   "private": true,
   "scripts": {
+    "postinstall": "npm --prefix MyWeb-master install",
     "build": "npm --prefix MyWeb-master run build",
     "dev": "npm --prefix MyWeb-master run dev",
     "start": "npm --prefix MyWeb-master run start"
