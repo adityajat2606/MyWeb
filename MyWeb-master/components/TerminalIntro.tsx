@@ -5,7 +5,7 @@ const lines = [
   "$ whoami",
   "Aditya Choudhary",
   "$ domain",
-  "Web Development",
+  "Web development and data analysis",
   "$ currently working",
   "Satnam Webtech",
   "$ role",
