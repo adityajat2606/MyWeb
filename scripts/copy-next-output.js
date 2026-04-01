@@ -3,6 +3,8 @@ const path = require("path");
 
 const src = path.join(__dirname, "..", "MyWeb-master", ".next");
 const dest = path.join(__dirname, "..", ".next");
+const publicSrc = path.join(__dirname, "..", "MyWeb-master", "public");
+const publicDest = path.join(__dirname, "..", "public");
 
 function copyDir(source, target) {
   if (!fs.existsSync(source)) {
@@ -23,6 +25,12 @@ function copyDir(source, target) {
 if (fs.existsSync(dest)) {
   fs.rmSync(dest, { recursive: true, force: true });
 }
+if (fs.existsSync(publicDest)) {
+  fs.rmSync(publicDest, { recursive: true, force: true });
+}
 
 copyDir(src, dest);
-console.log("Copied .next build output to repo root for Vercel.");
+if (fs.existsSync(publicSrc)) {
+  copyDir(publicSrc, publicDest);
+}
+console.log("Copied .next and public to repo root for Vercel.");
