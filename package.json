@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "postinstall": "npm --prefix MyWeb-master install",
-    "build": "npm --prefix MyWeb-master run build",
+    "build": "npm --prefix MyWeb-master run build && node scripts/copy-next-output.js",
     "dev": "npm --prefix MyWeb-master run dev",
     "start": "npm --prefix MyWeb-master run start"
   },
