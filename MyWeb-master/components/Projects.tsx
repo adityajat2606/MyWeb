@@ -18,7 +18,7 @@ export default function Projects() {
       num: "02",
       title: "Online Appointment Booking System",
       description: "Full-stack hospital website with real-time appointment booking using React.js, Node.js, and Firebase. Enhanced SEO and responsive UI increased online visibility by 35%.",
-      stack: ["ReactJS", "Tailwind CSS", "Node.js", "Firebase"],
+      stack: ["ReactJS", "Tailwind CSS", "Firebase"],
       year: "2025",
       link: "https://kalpeshhospital.com",
       highlight: "35% visibility boost",

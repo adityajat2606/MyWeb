@@ -143,8 +143,8 @@ export default function Hero() {
               </a>
 
               <a
-                href="/resume.pdf"
-                download
+                href="/Aditya_Choudhary_2026.pdf"
+                download="Aditya_Choudhary_2026.pdf"
                 className="magnetic flex items-center gap-2 px-7 py-3.5 font-mono text-sm uppercase tracking-widest border transition-all duration-300"
                 style={{ color: "var(--ink)", borderColor: "var(--line-strong)" }}
                 onMouseEnter={e => { const el = e.currentTarget; el.style.borderColor = "var(--gold)"; el.style.color = "var(--gold)"; }}

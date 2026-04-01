@@ -3,7 +3,7 @@ export default function Skills() {
   const categories = [
     {
       label: "Programming & Web",
-      items: ["Python", "TypeScript", "SQL", "React.js", "Next.js", "Tailwind CSS", "HTML", "CSS", "Node.js"],
+      items: ["Python", "TypeScript", "SQL", "React.js", "Next.js", "Tailwind CSS", "HTML", "CSS"],
     },
     {
       label: "Data & AI",
